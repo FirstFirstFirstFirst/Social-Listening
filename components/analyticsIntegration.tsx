@@ -248,24 +248,6 @@ const AnalyticsIntegration = () => {
             Connected to Google Analytics & Power BI
           </p>
         </div>
-        <div className="flex space-x-3">
-          <Select value={timeRange} onValueChange={setTimeRange}>
-            <SelectTrigger className="w-32">
-              <SelectValue placeholder="Time Range" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="24h">24 Hours</SelectItem>
-              <SelectItem value="7d">7 Days</SelectItem>
-              <SelectItem value="30d">30 Days</SelectItem>
-            </SelectContent>
-          </Select>
-          <button className="p-2 hover:bg-gray-100 rounded-lg">
-            <Settings className="h-5 w-5 text-gray-600" />
-          </button>
-          <button className="p-2 hover:bg-gray-100 rounded-lg">
-            <Download className="h-5 w-5 text-gray-600" />
-          </button>
-        </div>
       </div>
 
       <Tabs
